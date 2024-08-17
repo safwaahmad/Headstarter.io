@@ -1,4 +1,4 @@
-
+<!-- 
 <html>
 	<head>
 		<title>My Portfolio</title>
@@ -40,4 +40,51 @@
 			<script src="assets/js/main.js"></script>
 
 	</body>
-</html>
+</html> -->
+import streamlit as st
+
+# Set up the page configuration
+st.set_page_config(page_title="Muhammad Safwan Ahmad Saffi - Portfolio", page_icon=":tada:", layout="centered")
+
+# Add header with title and description
+st.title("Muhammad Safwan Ahmad Saffi")
+st.write("**Passionate Software Engineer for Pakistan**")
+st.write("Ready to bring Innovation in the world.")
+
+# Display the profile image
+st.image("path_to_your_image.jpg", width=300)
+
+# Create buttons for social media links
+st.subheader("Connect with me")
+st.markdown("""
+    <a href="https://twitter.com/SafwanAhamd" target="_blank"><button>Twitter</button></a>
+    <a href="https://www.instagram.com/SafwanAhamd" target="_blank"><button>Instagram</button></a>
+    <a href="https://github.com/safwaahmad" target="_blank"><button>GitHub</button></a>
+    <a href="mailto:safwanahmadsaffi836@gmail.com"><button>Email</button></a>
+    <a href="https://www.linkedin.com/in/safwan-ahmad-saffi/" target="_blank"><button>LinkedIn</button></a>
+""", unsafe_allow_html=True)
+
+# Add some personal details or a brief introduction
+st.subheader("About Me")
+st.write("I am a software engineer with a passion for developing innovative solutions. My expertise spans across several programming languages and tools, and I am eager to contribute to projects that make a difference.")
+
+# Add a section for showcasing projects or skills
+st.subheader("My Projects")
+st.write("Here are some of the projects I've worked on:")
+
+# Example project 1
+st.write("### Project 1: Chatbot with Streamlit")
+st.write("Description of the project...")
+
+# Example project 2
+st.write("### Project 2: Data Dashboard")
+st.write("Description of the project...")
+
+# Footer with copyright information
+    <hr>
+    <footer>
+        <ul class="icons">
+            <li>&copy; Muhammad Safwan Ahmad Saffi. All rights reserved.</li>
+        </ul>
+    </footer>
+
